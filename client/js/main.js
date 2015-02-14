@@ -60,14 +60,7 @@
   }
 
   function create() {
-    numbers = [];
-
-    for (var i = 0; i < 2; i++) {
-      for (var j = 0; j < 10; j++) {
-        numbers.push(j);
-      }
-    }
-
+    numbers = _.range(20).map(function(x) {return x % 10;});
     numbers = _.shuffle(numbers);
   }
 
